@@ -1,7 +1,7 @@
 import joblib
 import numpy as np
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
-from data_preprocessing import load_and_preprocess_data
+from src.data_preprocessing import load_and_preprocess_data
 from sklearn.model_selection import train_test_split
 
 def evaluate_model(data_path: str, model_path: str = "model.pkl"):

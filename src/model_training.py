@@ -2,7 +2,7 @@ import joblib
 from xgboost import XGBRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
-from data_preprocessing import load_and_preprocess_data
+from src.data_preprocessing import load_and_preprocess_data
 
 def train_model(data_path: str, model_path: str = "model.pkl"):
     X, y, encoders = load_and_preprocess_data(data_path)
